@@ -74,7 +74,7 @@ export default class Home extends React.PureComponent {
             <div>
             <Link to="/"> Home </Link>
             </div>
-            <Link to="/about"> About </Link>
+            <Link to="/Article"> About </Link>
           </nav>
           </div>
           <div style={bodyStyle}>
