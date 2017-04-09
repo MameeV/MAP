@@ -16,9 +16,6 @@ export default class Home extends React.PureComponent {
       background:"#3E262A"
     }
     const titleStyle={
-      borderTop:"3px solid #74D1EA",
-      borderBottom:"3px solid #74D1EA",
-      background: "#FAE0EE",
       display: "flex",
       flexDirection: "row",
       fontFamily:"Merriweather"
@@ -46,11 +43,6 @@ export default class Home extends React.PureComponent {
       height: "20px",
       background: "#74D1EA"
     }
-    const animeStyle={
-      borderRadius: "50%",
-      width: "100px",
-      height: "100px"
-    }
     const mainphotoStyle={
       borderRadius: "2%",
       width: "450px",
@@ -62,10 +54,9 @@ export default class Home extends React.PureComponent {
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
         <header>
         <span style={titleStyle}>
-            <img style={animeStyle} src="http://h4z.it/Image/7a075b_IMG_0630.JPG"/>
-          <div>
+
             Hello World! My Name is Suzette
-          </div>
+
         </span>
         </header>
         <main style={mainStyle}>
@@ -74,15 +65,15 @@ export default class Home extends React.PureComponent {
             <div>
             <Link to="/"> Home </Link>
             </div>
-            <Link to="/Article"> About </Link>
+            <Link to="/About"> About </Link>
           </nav>
           </div>
           <div style={bodyStyle}>
             <div>
-              Creating my first personal website
+              Medical Advocacy Partners
             </div>
             <img style={mainphotoStyle}
-            src="http://h4z.it/Image/162d37_IMG_0492.JPG"/>
+            src="http://h4z.it/Image/a5823c_MAP.jpg"/>
           </div>
         </main>
         <footer style={footerStyle}>
