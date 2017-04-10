@@ -10,38 +10,22 @@ import {Link} from "react-router";
 
 export default class About extends React.PureComponent {
   render() {
-    const divStyle={
-      width:"200px",
-      height:"400px",
-      background:"#3E262A"
-    }
-    const titleStyle={
+    const headStyle={
+      width: "100%",
+      height: "80px",
+      top: "auto",
+      borderTop: "3px solid #74D1EA",
+      borderBottom: "3px solid #74D1EA",
+      background: "#FAE0EE",
       display: "flex",
       flexDirection: "row",
-      fontFamily:"Merriweather"
-    }
-    const titleSize={
-      width: "100vh",
-      height: "60px"
-    }
-    const sideStyle={
-      width: "10%",
-      height: "100vh",
-      background: "#B4938C"
-    }
-    const bodyStyle={
-      width: "90%",
-      height: "100vh",
-      background: "#FAE0EE"
-    }
-    const mainStyle={
-      display: "flex",
-      flexDirection: "row"
-    }
-    const footerStyle={
-      width: "100%",
-      height: "20px",
-      background: "#74D1EA"
+      justifyContent: "center",
+      fontFamily: "Merriweather",
+      fontWeight: "bold",
+      fontSize: "40px",
+      color: "#3E262A",
+      textAlign: "center",
+      paddingTop: "10px"
     }
     const mainphotoStyle={
       borderRadius: "2%",
@@ -49,38 +33,142 @@ export default class About extends React.PureComponent {
       height: "300px",
       margin: "15px"
     }
+    const bodyStyle={
+      width: "100%",
+      height: "100vh",
+      background: "#FAE0EE",
+      fontFamily: "Merriweather",
+      fontWeight: "Bold",
+      fontSize: "20px",
+      color: "#3E262A",
+      paddingTop: "30px",
+      paddingLeft: "25px"
+    }
+    const indentStyle={
+      margin: "15px"
+    }
+    const contentContainer={
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "wrap",
+      width: "100%",
+      maxWidth: "1000px",
+      justifyContent: "space-around",
+      background: "#FAE0EE",
+      margin: "0 auto"
+    }
+    const contentContainerMobile={
+      display: "flex",
+      flexDirection: "column",
+      width: "100%",
+      background: "#FAE0EE"
+    }
+    const content={
+      width: "25%",
+      display: "flex",
+      flexDirection: "column"
+    }
+    const contentMobile={
+      width: "100%",
+      display: "flex",
+      flexDirection: "column"
+    }
+    const contentImage={
+      width: "100%",
+      height: "auto"
+    }
+    const contentTitle={
+      width: "100%",
+      height: "120px",
+      fontFamily: "Merriweather",
+      fontWeight: "Bold",
+      fontSize: "20px",
+      color: "#3E262A",
+      textShadow: "2px 5px 15px #74D1EA",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      textAlign: "center",
+      textOverflow: "ellipsis",
+      paddingTop: "15px",
+      paddingLeft: "15px",
+      paddingRight: "15px"
+    }
+    const contentBody={
+      width: "100%",
+      height: "80px",
+      maxHeight: "100px",
+      fontFamily: "Merriweather",
+      fontWeight: "Medium",
+      fontSize: "16px",
+      color: "#3E262A",
+      textAlign: "center",
+      paddingTop: "20px",
+      paddingLeft: "35px",
+      paddingRight: "35px",
+      marginBottom: "35px"
+    }
+    const arrowStyle={
+      fontSize: "1.5em",
+      color: "#74D1EA",
+      paddingTop: "30px"
+    }
+    const footerStyle={
+      width: "100%",
+      height: "20px",
+      background: "#74D1EA"
+    }
+
 
     return (
       <div>
         <Helmet title="About" meta={[ { name: 'description', content: 'Description of Home' }]}/>
-        <header>
-        <span style={titleStyle}>
-
-            Hello World! My Name is Suzette
-
-        </span>
+        <header style={headStyle}>
+          Medical Advocacy Partners
         </header>
-        <main style={mainStyle}>
-          <div style={sideStyle}>
-          <nav>
-            <div>
-            <Link to="/"> Home </Link>
+
+        <main>
+
+
+          <div style={contentContainer}>
+            <div style={content}>
+              <div style={contentImage}>
+              Image for the Content
+              </div>
+              <div style={contentTitle}>
+              Teaching Presentation Title
+              </div>
+              <div style={contentBody}>
+              Go To Website <span style={arrowStyle}> &#10173; </span>
+              </div>
             </div>
-            <Link to="/About"> About </Link>
-          </nav>
-          </div>
-          <div style={bodyStyle}>
-            <div>
-              Medical Advocacy Partners
+
+            <div style={content}>
+              <img style={contentImage}
+              src="http://h4z.it/Image/a5823c_MAP.jpg"/>
+              <div style={contentTitle}>
+              Another Presentation Title
+              </div>
+              <div style={contentBody}>
+              Go To Website <span style={arrowStyle}> &#10173; </span>
+              </div>
             </div>
-            <img style={mainphotoStyle}
-            src="http://h4z.it/Image/a5823c_MAP.jpg"/>
+
+            <div style={content}>
+              <div style={contentImage}>
+              Image for the Content
+              </div>
+              <div style={contentTitle}>
+              Teaching Presentation Title
+              </div>
+              <div style={contentBody}>
+              Go To Website <span style={arrowStyle}> &#10173; </span>
+              </div>
+            </div>
           </div>
         </main>
         <footer style={footerStyle}>
-            <div>
               Created by Suzette Verbeck
-            </div>
         </footer>
       </div>
     );

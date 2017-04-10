@@ -15,11 +15,7 @@ export default class Home extends React.PureComponent {
       height:"400px",
       background:"#3E262A"
     }
-    const titleStyle={
-      display: "flex",
-      flexDirection: "row",
-      fontFamily:"Merriweather"
-    }
+
     const titleSize={
       width: "100vh",
       height: "60px"
@@ -44,20 +40,13 @@ export default class Home extends React.PureComponent {
       background: "#74D1EA"
     }
     const mainphotoStyle={
-      borderRadius: "2%",
-      width: "450px",
-      height: "300px",
-      margin: "15px"
+      width: "100vh"
     }
     return (
       <div>
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
         <header>
-        <span style={titleStyle}>
 
-            Hello World! My Name is Suzette
-
-        </span>
         </header>
         <main style={mainStyle}>
           <div style={sideStyle}>
