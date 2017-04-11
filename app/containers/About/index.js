@@ -14,9 +14,9 @@ export default class About extends React.PureComponent {
       width: "100%",
       height: "80px",
       top: "auto",
-      borderTop: "3px solid #74D1EA",
-      borderBottom: "3px solid #74D1EA",
-      background: "#FAE0EE",
+      borderTop: "3px solid #89B613",
+      borderBottom: "3px solid #89B613",
+      background: "#DDCEBA",
       display: "flex",
       flexDirection: "row",
       justifyContent: "center",
@@ -54,7 +54,7 @@ export default class About extends React.PureComponent {
       width: "100%",
       maxWidth: "1000px",
       justifyContent: "space-around",
-      background: "#FAE0EE",
+      background: "#DDCEBA",
       margin: "0 auto"
     }
     const contentContainerMobile={
@@ -84,7 +84,7 @@ export default class About extends React.PureComponent {
       fontWeight: "Bold",
       fontSize: "20px",
       color: "#3E262A",
-      textShadow: "2px 5px 15px #74D1EA",
+      textShadow: "2px 5px 15px #89B613",
       display: "flex",
       flexDirection: "row",
       justifyContent: "center",
@@ -110,13 +110,13 @@ export default class About extends React.PureComponent {
     }
     const arrowStyle={
       fontSize: "1.5em",
-      color: "#74D1EA",
+      color: "#89B613",
       paddingTop: "30px"
     }
     const footerStyle={
       width: "100%",
       height: "20px",
-      background: "#74D1EA"
+      background: "#EDBBCB"
     }
 
 
